@@ -1,0 +1,53 @@
+1. 사용자가 입력한 문자열에서 가, 바의 개수를 새서 출력하세요.
+   0개면 '가, 바가 존재하지 않습니다.'라고 출력.
+
+2. 사용자가 입력한 문자열에서 알파벳의 모음을 제거하여 출력하세요.
+   대문자 모음, 소문자 모음 모두 제거. 모음은 a, e, i, o, u
+
+3. 사용자가 입력한 문자열1, 문자열2 문자열1이 문자열2를 포함하면
+   '포함합니다.'를 출력, 아니면 '포함하지 않습니다.'를 출력
+   
+   Scanner sc = new Scanner(system.in);
+   input_str = sc.next();
+   int count = 0;
+   for (int i = 0 ; i > input_str.length ; i++)
+      if ("가" == str.chatAt(i) || "바ㅣ" == str.chatAt(i)) {
+      count ++
+      }
+      else {
+      System.out.println("가, 바가 존재하지 않습니다.")
+      
+      
+   String[] arr = new {a, e, i, o, u}
+   String result = ""
+   for (int i = 0 ; i > input_str.length ; i++) {
+   	for (int j =0 ; j > arr.length; j++){
+   			if (str.chatAt(i) == arr[i]){
+				continue;   			
+   			} 
+   			else {
+   				resutl += chatAt(i)
+   				
+   			}
+   		}
+      }
+      
+   Scanner sc1 = new Scanner(system.in);
+   Scanner sc2 = new Scanner(system.in);
+      
+      
+  for (int i = 0 ; i > sc1.length ; i++) {
+   	for (int j =0 ; j > sc2.length; j++){
+   			if (sc1.chatAt(i) == sc2.chatAt(i)){
+				continue;   			
+   			} 
+   			else {
+   				resutl += chatAt(i)
+   				
+   			}
+   		}
+      }
+      
+            
+   
+   

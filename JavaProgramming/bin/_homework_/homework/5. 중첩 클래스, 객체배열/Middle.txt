@@ -1,0 +1,35 @@
+1. 사용자가 입력한 문자열을 받아서 가운데 문자를 출력하세요. 
+    문자열의 길이가 짝수면 가운데 두 글자 출력. ex) 비둘기 -> 둘, 비트캠프 -> 트캠
+
+2. 1. 길이가 12인 char 배열을 선언하고 {'b', 'c', 's', 'i', 'i', 'o', 'q', 'n', 't', 'm', 'l', 't'}로 초기화합니다.
+   단어를 bit, com, sql, int로 만들어서 모두 출력하세요.(힌트 bit => [0], [4], [8]에 있습니다.)
+        048  159  2610  3711
+   
+      Scanner sc = new Scanner(system.in);
+      
+      
+      str_num = sc.length
+      
+      if (str_num%2 == 0) {
+       	str_num2 = str_num / 2 
+       	result =  sc.substring(str_num2-1, str_num2+str_num2-1)
+       	
+       	}
+       	
+
+다음은 짧고 간결한 방법으로 주어진 char 배열에서 'bit', 'com', 'sql', 'int'를 만들어 출력하는 Java 코드입니다:
+
+java
+Copy code
+public class CharArrayExample {
+    public static void main(String[] args) {
+        char[] chars = {'b', 'c', 's', 'i', 'i', 'o', 'q', 'n', 't', 'm', 'l', 't'};
+        
+        String[] words = {"bit", "com", "sql", "int"};
+        
+        for (String word : words) {
+            int index = word.charAt(0) - 'a';
+            String result = "" + chars[index] + chars[index + 4] + chars[index + 8];
+            System.out.println(word + ": " + result);
+        }
+       }
